@@ -1,13 +1,13 @@
-function notif(msg)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Shortcut"; 
-        Text = msg; 
-        Duration = 5;
-    })
+function logn(msg)
+    game.StarterGui:SetCore(
+        "SendNotification",
+        {
+            Title = "Shortcut",
+            Text = msg,
+            Duration = 1
+        }
+    )
 end
-function send(a,b)
-print(a,b)
-end
-send("","This loadstring is outdated. Check your clipboard")
-notif("This loadstring is outdated. Check your clipboard"")
+
+logn("This loadstring is outdated. Check your clipboard")
 setclipboard("loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))() \n discord.gg/shortcut \n dsc.gg/shortcut (incase we lost our boosts :D) \n Joining the discord is optional but would be appreciated")
