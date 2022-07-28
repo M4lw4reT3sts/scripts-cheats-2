@@ -12,6 +12,4 @@ end
 logn("This loadstring is outdated. Check your clipboard")
 setclipboard([[
 --loadstring(game:HttpGet(('https://raw.githubusercontent.com/Qltxi/SCV2/main/Obfuscated%20SCV2-NP'),true))()
-discord.gg/shortcut
-dsc.gg/shortcut (incase we lost our boosts :D)
-Joining the discord is optional but would be appreciated]])
+]])
