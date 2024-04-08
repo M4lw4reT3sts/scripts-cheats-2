@@ -3343,6 +3343,9 @@ end
 local MT = getrawmetatable(game)
 local __namecall = MT.__namecall
 setreadonly(MT, false)
+MT.__namecall = newcclosure(function(self, ...)
+	local Method = getnamecallmethod()
+	local isExploit = checkcaller()
 	if States.SilentAim then
 		if not Unloaded and Method == "FindPartOnRay" and not checkcaller() and tostring(getfenv(0).script) == "GunInterface" then
 			local Character = ClosestChar()
